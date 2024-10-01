@@ -30,7 +30,14 @@ public class MainActivity2 extends AppCompatActivity {
             boolean bool = bundle.getBoolean("BOOL");
 
             txtContador.setText(String.valueOf(frase.length()));
+
+            if (!bool) {
+
+
+                txtContador.setText(String.valueOf(frase.split(" ").length));
+            }
         }
+
 
 
     }

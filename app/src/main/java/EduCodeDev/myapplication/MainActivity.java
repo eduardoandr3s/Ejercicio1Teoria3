@@ -54,13 +54,13 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                String frase2 = txtFrase.getText().toString();
-                boolean bool2 = true;
+                String frase = txtFrase.getText().toString();
+                boolean bool = false;
 
                 Intent intent = new Intent(MainActivity.this, MainActivity2.class);
                 Bundle bundle = new Bundle();
-                bundle.putString("FRASE", frase2);
-                bundle.putBoolean("BOOL", bool2);
+                bundle.putString("FRASE", frase);
+                bundle.putBoolean("BOOL", bool);
 
                 intent.putExtras(bundle);
                 startActivity(intent);
